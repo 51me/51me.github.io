@@ -1,10 +1,53 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <script>
-    alert('Hello, world');
-  </script>
-</head>
 <body>
+
+<h1 id="jhead">我的第一张网页</h1>
+
+<input type="text" id="email">
+
+<button onclick="onText()">点击这里</button>
+<br>
+<label><input type="radio" name="weekday" id="rmon" value="1"> Monday</label>
+<br>
+<label><input type="radio" name="weekday" id="rtue" value="2"> Tue</label>
+<br>
+<label><input type="radio" name="weekday" id="rthi" value="3"> Third</label>
+<br>
+<label><input type="radio" name="weekday" id="rtus" value="4"> Tus</label>
+<br>
+<label><input type="radio" name="weekday" id="rfri" value="5"> Fri</label>
+
+<br>
+<label><input type="checkbox" name="weekday" id="cmon" value="1"> Monday</label>
+<br>
+<label><input type="checkbox" name="weekday" id="ctue" value="2"> Tue</label>
+<br>
+<label><input type="checkbox" name="weekday" id="cthi" value="3"> Third</label>
+<br>
+<label><input type="checkbox" name="weekday" id="ctus" value="4"> Tus</label>
+<br>
+<label><input type="checkbox" name="weekday" id="cfri" value="5"> Fri</label>
+
+<script>
+
+start()
+
+function start()
+{
+  document.getElementById("jhead").innerHTML = "TTT";
+  var input = document.getElementById('email');
+  input.value = "输入用户名";
+}
+
+function onText()
+{
+  var iText = document.getElementById("email");
+
+  document.getElementById("jhead").innerHTML = iText.value;
+}
+
+</script>
 
 </body>
 </html>
